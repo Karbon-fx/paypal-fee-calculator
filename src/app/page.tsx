@@ -48,12 +48,10 @@ export default async function Home() {
     AED: aedRate
   };
 
-  const ratesForDisplay = Object.keys(ratesForCalculator).reduce((acc, currency) => {
-    if (ratesForCalculator[currency] !== 0) {
-      acc[currency] = `1 ${currency} = ${(1 / ratesForCalculator[currency]).toFixed(2)} INR`;
-    }
-    return acc;
-  }, {} as {[key: string]: string});
+  // Ensure INR has a rate if the API fails
+  if (!ratesForCalculator.INR) {
+    ratesForCalculator.INR = 1;
+  }
 
 
   return (
