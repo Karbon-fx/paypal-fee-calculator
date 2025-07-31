@@ -9,6 +9,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '448px',
+      },
       fontFamily: {
         body: ['Geist', 'sans-serif'],
         headline: ['Geist', 'sans-serif'],
