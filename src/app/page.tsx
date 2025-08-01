@@ -55,7 +55,7 @@ export default async function Home() {
 
 
   return (
-    <main className="flex min-h-screen w-full flex-col items-center justify-center">
+    <main className="flex min-h-screen w-full flex-col items-center justify-center bg-white">
       <div className="w-full max-w-[448px] mx-auto">
         <FeeCalculator initialRates={ratesForCalculator} />
       </div>
