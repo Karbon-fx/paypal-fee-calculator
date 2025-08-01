@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xs': '448px',
+        'xs': '400px',
       },
       fontFamily: {
         body: ['Geist', 'sans-serif'],

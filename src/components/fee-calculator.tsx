@@ -308,11 +308,11 @@ export default function FeeCalculator({ initialRates }: { initialRates: { [key: 
                   )}
                 />
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                <Button type="submit" size="lg" className="flex-1 text-base font-medium" style={{ backgroundColor: '#0657D0' }}>
+              <div className="flex flex-col xs:flex-row gap-4 pt-2">
+                <Button type="submit" size="lg" className="xs:flex-1 text-base font-medium" style={{ backgroundColor: '#0657D0' }}>
                   Calculate
                 </Button>
-                <Button type="button" variant="outline" size="lg" className="w-full sm:w-24 font-medium bg-white hover:bg-secondary hover:text-secondary-foreground" onClick={handleReset}>
+                <Button type="button" variant="outline" size="lg" className="sm:w-24 font-medium bg-white hover:bg-secondary hover:text-secondary-foreground" onClick={handleReset}>
                   <RotateCw className="mr-2 h-4 w-4" /> Reset
                 </Button>
               </div>
