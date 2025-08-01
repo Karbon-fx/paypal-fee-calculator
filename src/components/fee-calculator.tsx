@@ -219,7 +219,7 @@ export default function FeeCalculator({ initialRates }: { initialRates: { [key: 
   
   return (
     <TooltipProvider>
-      <Card className="w-full border-2 border-primary/10 rounded-2xl bg-[#F7FAFF]">
+      <Card className="w-full">
         <CardContent className="p-6">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(runCalculation)} className="space-y-6">
